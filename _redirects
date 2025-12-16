@@ -1,0 +1,15 @@
+# Cloudflare Pages redirects and rewrites
+
+# SPA routing - serve all routes as index.html for client-side routing
+/shapes.html /shapes.html 200
+/solar.html /solar.html 200
+/fractal.html /fractal.html 200
+/dashboard.html /dashboard.html 200
+/redroom.html /redroom.html 200
+/index.html /index.html 200
+
+# Root to index
+/ /index.html 200
+
+# Fallback for any other routes
+/* /index.html 404
